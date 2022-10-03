@@ -1,4 +1,4 @@
-# Welcome to Thapa Technical React Ecommerce Website Series
+# Welcome to Sheela Store My Mom is my insprition React Ecommerce Website Series
 
 ## Follow the 3 Steps and you are good to go. 
 
