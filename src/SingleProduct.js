@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from 'react'
 
 const SingleProduct = () => {
-  return <Wrapper></Wrapper>;
+  return <Wrapper>SingleProduct</Wrapper>;
 }
 
 
