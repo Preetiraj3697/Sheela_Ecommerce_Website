@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
-import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
+import {FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -43,7 +43,9 @@ const Footer = () => {
               <h3>Follow Us</h3>
               <div className="footer-social--icons">
                 <div>
-                  <FaDiscord className="icons" />
+                  <a href="https://github.com/Preetiraj3697" target="_blank">
+                  <FaGithub className="icons" />
+                  </a>
                 </div>
                 <div>
                 <a
@@ -54,16 +56,16 @@ const Footer = () => {
                 </div>
                 <div>
                   <a
-                    href="https://www.youtube.com/channel/UCUm2fjgbYRGRfiSh4LqSPyA"
+                    href="https://www.linkedin.com/in/preetiraj3697/"
                     target="_blank">
-                    <FaYoutube className="icons" />
+                    <FaLinkedin className="icons" />
                   </a>
                 </div>
               </div>
             </div>
             <div className="footer-contact">
               <h3>Call Us</h3>
-              <h3>+91 12345678978</h3>
+              <h3>+91 8448206862</h3>
             </div>
           </div>
 
@@ -71,7 +73,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+                @{new Date().getFullYear()} 💟 PREETI RAJ. All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
