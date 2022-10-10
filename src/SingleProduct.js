@@ -1,8 +1,29 @@
 import styled from "styled-components";
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useParams } from "react-router-dom";
+import { useProductContext } from "./context/productContext";
+import FormatPrice from "./Helpers/FormatPrice";
 
+const API = "https://api.pujakaitem.com/api/products"
 const SingleProduct = () => {
-  return <Wrapper>SingleProduct</Wrapper>;
+  const {getSingleProduct,isSingleLoading,singleProduct} = useProductContext();
+   console.log('SingleProduct: ', singleProduct);
+  const {id} = useParams();
+  // console.log('id: ', id);
+   const {id: sheela,image,name,company, description,category,stock,stars,reviews,price} = singleProduct;
+  useEffect(()=>{
+  getSingleProduct(`${API}?id=${id}`)
+  },[])
+  return <Wrapper>
+    <img src={image} alt="image" />
+    <h3>Name : {name}</h3>
+  <h3>Company : {company}</h3>
+  <p>Description : {description}</p>
+  <h3 className="product-data-price">Price : <FormatPrice price={price}/></h3>
+  <h3>Category : {category}</h3>
+  <h3>Stock : {stock}</h3>
+  <h3>Stars : {stars}</h3>
+  <h3>Reviews : {reviews}</h3></Wrapper>;
 }
 
 
