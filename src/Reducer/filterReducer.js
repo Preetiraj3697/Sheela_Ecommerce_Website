@@ -68,7 +68,7 @@ const filterReducer = (state,action) => {
                                    return curElem.name.toLowerCase().includes(text);
                                 })
                             }
-                            if(category){
+                            if(category !== "All"){
                                 tempFilterProduct = tempFilterProduct.filter((curElem)=>{
                                     return curElem.category === category;
                                  }) 
