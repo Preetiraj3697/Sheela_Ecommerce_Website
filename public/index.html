@@ -1,43 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   #loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+.center {
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+</style>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<script>
+          //loading
+     
+          document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "";
+                document.querySelector(
+                  "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#loader").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "";
+            }
+        };
+</script>
+<title>Modern Design</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content="طب سنتی, طب, داروخانه, شفا, تله مدیسن, بهبودخانه, بهبود خانه, behboodkhaneh, fif,nohki, fif,n ohki">
+<meta name="description" lang="fa" content="سایت تخصصی پزشکی تلفیقی با رویکرد طب سنتی ایرانی">
+<meta name="description" lang="en" content="Telemedicine - Combined medicine with the approach of traditional Persian medicine">
+<meta name="author" lang="en" content="FRYSTIC">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#d4e1f2">
+<meta name="msapplication-navbutton-color" content="#d4e1f2">
+<meta name="msapplication-TileColor" content="#d4e1f2">
+<meta name="msapplication-TileImage" content="/icon-144x144.png">
+<meta name="robots" content="noindex, nofollow">
+<link rel="shortcut icon" href="/img/icon/ico.ico">
+<link rel="manifest" href="/Behboodkhaneh.webmanifest">
+<link rel="alternate" href="https://www.behboodkhaneh.com">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<script src='%PUBLIC_URL%/js/jquery.min.js'></script>
+<script src="%PUBLIC_URL%/js/script.js"></script>
+<script src="%PUBLIC_URL%/js/swiper.js"></script>
+<script src="%PUBLIC_URL%/js/app.js"></script>
+<script src="%PUBLIC_URL%/js/crypto-price.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+<link rel="stylesheet" href="%PUBLIC_URL%/css/swiper.css">
+<link rel="stylesheet" href="%PUBLIC_URL%/css/base.css">
+<link rel="stylesheet" href="%PUBLIC_URL%/css/theme.css">
+<link rel="stylesheet" media="screen and (min-width: 100px) and (max-width: 499px)" href="%PUBLIC_URL%/css/mobile.css">
+<link rel="stylesheet" media="screen and (min-width: 500px) and (max-width: 999px)" href="%PUBLIC_URL%/css/tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 1000px) and (max-width: 1399px)" href="%PUBLIC_URL%/css/mini-desktop.css">
+<link rel="stylesheet" media="screen and (min-width: 1400px)" href="css/desktop.css">
+
+</head>
+<body>
+
+  
+
+  <div id="loader" class="center"></div>
+  <div class="backg"></div>
+  <span id="circle" class="circle"></span>
+
+<div class="top-menu">
+
+<div id="navbar-bg"><br><br><br><br><br></div>
+
+<div id="mySidenav" class="sidenav top-menu-item-container">
+  <a href="javascript:void(0)" class="closebtn1 mobile-only" onclick="closeNav1()">×</a>
+  <img class="logo desktop-only" src="img/logo.png">
+
+    <a href="">Home</a>
+    <a href="">Products</a>
+    <div class="dropdown">
+      <button class="dropbtn">Categories </button>
+      <div class="dropdown-content">
+            <a href="#">Anime & Comics</a>
+            <a href="#">Sport</a>
+            <a href="#">Trade</a>
+            <a href="#">Books & Magazines</a>
+            <a href="#">Game</a>
+            <a href="#">Stream</a>
+            <a href="#">Education</a>
+            <a href="#">Meditation</a>
+      </div>
+    </div> 
+  
+    <a href="">Feedbacks</a>
+    <a href="">Support</a>
+        <form role="search" method="get" class="search-form desktop-only" action="">
+            <input type="search" class="search-field " placeholder=" Type something ..." value="" name="s">
+            <input type="submit" class="search-submit" value="Search">
+    </form>
+</div>
+</div>
+
+<div class="top mobile-only">
+
+<div id="sidemenu-btn" class="mobile-only">
+  <span onclick="openNav1()">
+      <img src="https://kfhgilan.org/wp-content/themes/BehboodKhaneh_wp_theme/img/app/menubtn.svg"> 
+  </span>
+</div>
+
+
+<div class="mobile-logo">
+<img class="logo mobile-only" src="img/logo.png">
+</div>
+
+  
+  <span id="searchModalBtn">
+    <img src="https://kfhgilan.org/wp-content/themes/BehboodKhaneh_wp_theme/img/app/searchbtn.svg"> 
+</span>
+
+</div>
+
+
+<div id="searchModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <div class="modal-body">
+      <p>  
+        </p><form role="search" method="get" class="search-form" action="../">
+				<label> 
+					<span class="screen-reader-text">Explore in +300 digital product</span>
+					<input type="search" class="search-field" placeholder="type something ..." value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Go">
+			</form>
+<p></p>
+      <br><br><br><br>
+    </div>
+  </div>
+</div>
+
+
+  <div class="toolbar">
+
+    <img class="symbol" src="img/small.logo.png">
+
+    <div class="flex-item-container">
+      <button 
+    class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+      <span><img src="img/icon/1.png"></span>
+     </button> 
+     <span><img src="img/icon/2.png"></span>
+     <span><img src="img/icon/3.png"></span>
+     <span><img src="img/icon/4.png"></span>
+     <span><img src="img/icon/5.png"></span>
+    </div>
+  </div>
+
+
+  <div class="center-container">
+<div id="root"></div>
+</div>
+
+
+<script>
+
+    ///darkmode memory
+            var app = document.getElementsByTagName("BODY")[0];
+          if (localStorage.lightMode == "dark") {
+              app.setAttribute("light-mode", "dark");
+          }
+    
+          function toggle_light_mode() {
+              var app = document.getElementsByTagName("BODY")[0];
+              if (localStorage.lightMode == "dark") {
+                  localStorage.lightMode = "light";
+                  app.setAttribute("light-mode", "light");
+              } else {
+                  localStorage.lightMode = "dark";
+                  app.setAttribute("light-mode", "dark");
+              }       
+          }
+    
+      window.addEventListener("storage", function () {
+        if (localStorage.lightMode == "dark") {
+          app.setAttribute("light-mode", "dark");
+        } else {
+          app.setAttribute("light-mode", "light");
+        }
+      }, false);
+      
+    
+    ///
+    
+    /// top slider
+            
+            var swiper = new Swiper(".main-slider", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+              },
+          hashNavigation: {
+            watchState: true,
+          },
+            });
+    
+    
+    
+    /// product sliders 
+    
+    function dependsOnSize(){
+      if((window.innerWidth >= 200 && window.innerWidth <= 499 )){ return 1.8; } else {
+             if((window.innerWidth >= 500 && window.innerWidth <= 999 )){ return 3.5; } else {     
+                 if((window.innerWidth >= 1000 && window.innerWidth <= 1399 )){ return 4; } else {
+                    if((window.innerWidth >= 1400)){ return 5.5; }
+      }}}};
+                    
+            var swiper = new Swiper(".scrolling-wrapper", {
+              spaceBetween: 0,
+              freeMode: true,
+              slidesPerView: dependsOnSize(),
+              hashNavigation: {
+                  watchState: true,
+               },
+            });
+    
+    
+    
+    
+    
+    
+    ///////////////////////////// The 01 Wrapper
+    
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filter01");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("BtnContainer01");
+      var btns = btnContainer.getElementsByClassName("btn01");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    
+    
+    
+    
+    
+    
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar-bg").style.top = "0";
+      } else {
+        document.getElementById("navbar-bg").style.top = "-100px";
+      }
+    }
+    
+    
+    
+    // search modal
+    var modal = document.getElementById("searchModal");
+        var btn = document.getElementById("searchModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      
+      </script>
+    
+    
+    
+    </body>
+    </html>
+    

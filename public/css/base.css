@@ -1,0 +1,180 @@
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/woff2/KalamehWeb-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/woff2/KalamehWeb-ExtraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-ExtraLight.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/woff2/KalamehWeb-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/woff2/KalamehWeb-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/woff2/KalamehWeb-Semibold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Semibold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/woff2/KalamehWeb-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-ExtraBold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/woff2/KalamehWeb-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Black.woff') format('woff')  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/woff2/KalamehWeb-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: KalamehWeb;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/woff2/KalamehWeb-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/KalamehWeb-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+
+*{
+    font-family: KalamehWeb !important;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    text-align: left;
+}
+
+body {
+    margin: 0;
+  }
+      
+   .backg {
+    position: fixed;
+    object-fit: cover;
+    height: 130%;
+    width: 130%;
+    left: -10%;
+    right: -10%;
+    top: -10%;
+    filter:  saturate(1.5) blur(50px) brightness(0.8);
+    background: url(/img/liq.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+  
+  #splash-screen {
+    z-index:1000;
+    width:100%;
+    height:100%; 
+    position:fixed;
+    background:#ffffff; 
+    text-align:center; 
+    font-family:vazir; 
+    direction:rtl;
+    -webkit-animation-name: fadeout;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeout;
+    animation-duration: 0.4s;
+    animation-delay: 2.6s;
+  }
+
+  @keyframes fadeout {
+    from {opacity: 1} 
+    to {opacity: 0}
+  }
+
+#splash-screen p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    text-align:center;
+  }
+  
+  #splash-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 66px;
+    width: 200px;
+    text-align: center;
+}
+
+input{
+  border: none;
+  background-color: #000000ab;
+  border-radius: 80px;
+  outline: none;
+  color: #fff;
+  padding: 10px !important;
+  margin: 0 !important;
+}
+  
+
+body[light-mode="dark"] input {
+  color : #333;
+  background-color: #ffffffab;
+ } 
+
+button {
+
+}
+
+/* scroll bar 
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+background : #4853f9;
+  border-radius: 10px;
+  width: 50px ;
+  position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#4853f9;
+  border-radius: 10px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4853f9; 
+}   */

@@ -1,0 +1,51 @@
+
+  /* Light Mode Button
+  --------------------------- */ 
+
+  .light-mode-button {
+    background:0;
+      cursor: pointer;
+      border: 0px solid rgba(255,255,255,0);
+      outline: none;
+  }
+
+/* Light & Dark Mode Styles
+		--------------------------- */
+
+body {
+    background-color: #000;
+    transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+    background-color: #ffffff;
+    color: #ced4e2;
+}
+
+
+body[light-mode="dark"] a {
+    color: #141516;
+}
+
+
+body[light-mode="dark"] .toolbar {
+background-color: #fff;
+box-shadow: -170px 300px 150px 150px #4853f94d;
+}
+
+body[light-mode="dark"] .crypto-price-box {
+  color: #363636;
+}
+
+body[light-mode="dark"] .symbol {
+  filter: brightness(1);
+}
+
+body[light-mode="dark"] .backg {
+    filter: saturate(1.5) blur(40px) brightness(0.8) invert(1) hue-rotate(196deg);
+    transform: scale(2);
+}
+
+body[light-mode="dark"] .circle {
+border: 2px solid #4853f9;
+}
