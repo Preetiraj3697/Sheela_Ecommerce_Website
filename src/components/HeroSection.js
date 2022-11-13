@@ -14,7 +14,7 @@ const HeroSection = ({myData}) => {
                 <h1>{name}</h1>
                 <p>Whoever said cash can’t purchase joy basically didn’t know where to go shopping.
                 Shopping is somewhat of a loosening upside interest for me, or, in other words for the bank balance.</p>
-             <NavLink>
+             <NavLink to="/products">
                 <Button>Shop Now</Button>
              </NavLink>
             </div>
