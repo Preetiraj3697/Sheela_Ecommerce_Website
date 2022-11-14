@@ -1,3 +1,5 @@
+
+
 const cartReducer = (state, action) => {
     if (action.type === "ADD_TO_CART") {
       let { id, color, amount, product } = action.payload;
@@ -51,13 +53,7 @@ const cartReducer = (state, action) => {
         cart: updatedCart,
       };
     }
-  //to empty or to clear the cart
-    if(action.type === "CLEAR_CART"){
-      return{
-        ...state,
-        cart:[],
-      }
-    }
+  
     if(action.type === "SET_DECREMENT"){
        let updatedProduct = state.cart.map((curElem) => {
         if(curElem.id === action.payload){
@@ -91,6 +87,24 @@ const cartReducer = (state, action) => {
         }
        })
        return {...state,cart:updatedProduct}
+    }
+    //to empty or to clear the cart
+    if(action.type === "CLEAR_CART"){
+      return{
+        ...state,
+        cart:[],
+      }
+    }
+    if(action.type==="CART_TOTAL_ITEM"){
+      let updatedItemVal = state.cart.reduce((initialval,curElem)=>{
+           let {amount} = curElem;
+           initialval = initialval + amount;
+           return initialval;
+      },0)
+      return{
+        ...state,
+        total_item: updatedItemVal,
+      }
     }
     return state;
   };
