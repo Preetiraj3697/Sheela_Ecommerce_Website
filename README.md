@@ -62,11 +62,6 @@ npm start
   title="Optional title"
   style="display: inline-block; margin: 0 auto;">
   <hr/>
-<<<<<<< HEAD
-
-=======
-  
 
 https://user-images.githubusercontent.com/107460745/202193167-1753d63f-8469-4e83-8bbb-a389537f605a.mp4
 
->>>>>>> bcb1dae3f2749ea5c0d7dde080aae3fc90bbaf1a
