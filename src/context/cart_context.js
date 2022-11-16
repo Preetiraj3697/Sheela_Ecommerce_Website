@@ -42,8 +42,9 @@ const CartProvider = ({ children }) => {
   // to add the data in localStorage
   //get vs set
   useEffect(() => {
-    dispatch({type:"CART_TOTAL_ITEM"});
-    dispatch({type:"CART_TOTAL_PRICE"})
+    // dispatch({type:"CART_TOTAL_ITEM"});
+    // dispatch({type:"CART_TOTAL_PRICE"})
+    dispatch({type:"CART_ITEM_PRICE_TOTAL"})
     localStorage.setItem("SheelaCart", JSON.stringify(state.cart));
   }, [state.cart]);
   return (
