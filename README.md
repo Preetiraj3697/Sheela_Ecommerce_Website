@@ -1,5 +1,5 @@
-## Welcome to Sheela Store { This store insprition is my mom }React Ecommerce Website Series
-
+## Welcome to Sheela Store { This store insprition is my mom} Ecommerce Website
+⚡️ [![GitHub](https://img.shields.io/github/license/preetiraj3697/Sheela_Ecommerce_Website?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/preetiraj3697/Sheela_Ecommerce_Website) ![GitHub forks](https://img.shields.io/github/forks/preetiraj3697/Sheela_Ecommerce_Website)
 ### Features:
 
 ---
@@ -62,11 +62,6 @@ npm start
   title="Optional title"
   style="display: inline-block; margin: 0 auto;">
   <hr/>
-<<<<<<< HEAD
-
-=======
-  
 
 https://user-images.githubusercontent.com/107460745/202193167-1753d63f-8469-4e83-8bbb-a389537f605a.mp4
 
->>>>>>> bcb1dae3f2749ea5c0d7dde080aae3fc90bbaf1a
