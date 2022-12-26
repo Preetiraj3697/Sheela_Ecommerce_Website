@@ -12,11 +12,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const domain = process.env.REACT_APP_AUTH_DOMAIN;
 const clientId = process.env.REACT_APP_CLIENT_ID;
-
 root.render(
   <Auth0Provider
-  domain="dev-2idpey44at617j2n.us.auth0.com"
-  clientId="ddem9DuuO2GCT7rD0PgdvSBVDdJsBPTO"
+  domain={domain}
+  clientId={clientId}
   redirectUri={window.location.origin}>
     <AppProvider>
       <FilterContextProvider>
