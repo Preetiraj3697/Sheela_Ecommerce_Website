@@ -23,6 +23,14 @@
 2. React Router
 3. Axios
 4. Styled Components
+### Links
+
+---
+
+
+1. Netlify https://harmonious-squirrel-c80a4a.netlify.app
+2. vercel https://sheela-ecommerce-website.vercel.app
+
 
 ### How to start?
 
