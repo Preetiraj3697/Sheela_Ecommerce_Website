@@ -202,7 +202,6 @@ const Nav = () => {
               Contact
             </NavLink>
           </li>
-
           {isAuthenticated && <p>{user.name}</p>}
 
           {isAuthenticated ? (
