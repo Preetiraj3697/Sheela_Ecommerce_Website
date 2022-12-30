@@ -21,8 +21,11 @@
 
 1. React.js
 2. React Router
-3. Axios
+3. Redux
+For Styling 
 4. Styled Components
+For login and Registration
+5. Auth0
 ### Links
 
 ---
