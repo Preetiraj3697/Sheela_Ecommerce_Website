@@ -22,10 +22,14 @@
 1. React.js
 2. React Router
 3. Redux
+
 For Styling 
-4. Styled Components
+
+1. Styled Components
+
 For login and Registration
-5. Auth0
+
+1. Auth0
 ### Links
 
 ---
