@@ -1,5 +1,10 @@
 ## Welcome to Sheela Store { This store insprition is my mom} Ecommerce Website
-⚡️ [![GitHub](https://img.shields.io/github/license/preetiraj3697/Sheela_Ecommerce_Website?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/preetiraj3697/Sheela_Ecommerce_Website) ![GitHub forks](https://img.shields.io/github/forks/preetiraj3697/Sheela_Ecommerce_Website)
+⚡️ [![GitHub](https://img.shields.io/github/license/preetiraj3697/Sheela_Ecommerce_Website?color=green)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) 
+![GitHub stars](https://img.shields.io/github/stars/preetiraj3697/Sheela_Ecommerce_Website?color=red) 
+![GitHub forks](https://img.shields.io/github/forks/preetiraj3697/Sheela_Ecommerce_Website)
+![Logo](https://img.shields.io/github/last-commit/preetiraj3697/Sheela_Ecommerce_Website)
+![Logo](https://img.shields.io/github/languages/code-size/preetiraj3697/Sheela_Ecommerce_Website)
+![Logo](https://img.shields.io/github/contributors/preetiraj3697/Sheela_Ecommerce_Website)
 ### Features:
 
 ---
