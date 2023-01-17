@@ -11,6 +11,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import GoToTop from "./components/GoToTop";
 const App = () => {
   const theme = {
     colors: {
@@ -50,6 +51,7 @@ const App = () => {
       <Route path="/cart" element={<Cart/>}/>
       <Route path="*" element={<Error/>}/>
     </Routes>
+    <GoToTop />
     <Footer/>
     </BrowserRouter>
     </ThemeProvider>
