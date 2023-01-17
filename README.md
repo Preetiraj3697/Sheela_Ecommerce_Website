@@ -46,9 +46,8 @@ For login and Registration
 
 ---
 
-
-1. Netlify https://harmonious-squirrel-c80a4a.netlify.app
-2. vercel https://sheela-ecommerce-website.vercel.app
+1. Netlify https://sheelastore.netlify.app
+2. vercel  https://sheela-ecommerce-website.vercel.app
 
 
 ### How to start?
