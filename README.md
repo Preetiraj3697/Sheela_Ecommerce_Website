@@ -19,11 +19,13 @@
 - Add to cart functionality
 - Shopping cart functionality
 - Product Filtering functionality
-- Product page
+- Product page with all sorting and searching
+- Singal Product page With Additional images change functionality
 - Cart and checkout page
 - Contact page
 - Login and Register page
 - Awesome modern minimalist UI
+- Go To Top on Page Functionality
 
 ### Technologies Used:
 
